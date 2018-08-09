@@ -1,2 +1,7 @@
 # BaseRefreshTableViewController
 BaseTableViewController
+
+
+封装了一个TableViewController基类，需要使用表视图的VC可以继承BaseRefreshTableView
+
+封装了界面加载数据的处理操作及无数据图片的显示
