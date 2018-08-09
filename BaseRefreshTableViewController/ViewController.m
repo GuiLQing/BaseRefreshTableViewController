@@ -47,6 +47,12 @@
     return cell;
 }
 
+#pragma mark - tableView Delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 #pragma mark - requestData
 
 //调用父类的方法，这个方法会在加载页面的时候默认被调用一次，如果需要首次不加载，需在[super viewDidLoad]之前设置self.isCloseFirstRequest = YES;
